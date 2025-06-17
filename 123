@@ -1,0 +1,15 @@
+using System;
+using System.Collections.Generic;
+					
+public class Program
+{
+	public static void Main()
+	{
+		List<int>numeros = new(){1,2,3};
+		foreach(int n in numeros)
+		{
+			Console.Write(n + " ");
+		}
+		//Saida 1 2 3
+	}
+}

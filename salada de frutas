@@ -1,0 +1,25 @@
+
+using System;
+using System.Collections.Generic;
+
+public class Program
+{
+    public static void Main()
+    {
+        List<string> names = new List<string> {"Jabuticaba", "Laranja", "Kiwi", "Caqui", "Jaca", "Maçã"};
+        foreach (var name in names)
+        {
+            Console.WriteLine($"Olá {name.ToUpper()}");
+        }
+
+        Console.WriteLine();
+        names.Add("Abacaxi");
+        names.Add("Pitaia");
+        names.Remove("Maçã");
+
+        foreach (var name in names)
+        {
+            Console.WriteLine($"Olá {name.ToUpper()}");
+        }
+    }
+}

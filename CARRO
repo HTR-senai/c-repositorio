@@ -1,0 +1,31 @@
+using system;
+
+public class Carro
+{
+    private string marca;
+    private string modelo;
+    private int ano;
+
+    public Carro(string marca, string modelo, int ano)
+{
+    this.marca = marca;
+    this.modelo = modelo;
+    this.ano = ano;
+}
+
+public void Apresentar()
+{
+    console.WriteLine($"Olá, o meu carro é da marca {marca} , ele é um {modelo} de {ano}");
+}
+}
+    public class exibicao
+{
+    public static void Main()
+    {
+        Carro carro1 = new Carro("Volksvagen", "sedan" 2008);
+        carro1.Apresentar();
+
+        Carro carro2 = new Carro("Renault", "SUV" 1980);
+        carro2.Apresentar();
+    }
+}
